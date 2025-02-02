@@ -1,13 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nuture's platter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/d7b7563d24.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+              "bike-primary-bg": "rgba(231, 111, 81, 0.1)",
+            },
+            fontFamily: {
+              Sora: ["Sora", "serif"], // Google Font
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body class="font-Sora">
+    <header class="bg-gradient-to-t from-[#FFFFFF] to-[#EFEBE3]">
+      <nav class="container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start">
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+            <img class="hidden md:flex" src="/assets/logo-header.png" alt="" />
+            <img class="md:hidden flex" src="/assets/logo-header1.png" alt="" />
+          </div>
+          <div class="navbar-center hidden md:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-xl">Product</a></li>
+              <li><a class="text-xl">Services</a></li>
+              <li><a class="text-xl">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-3">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block h-5 w-5 stroke-current"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-1"
+              >
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="pl-1 hidden md:flex">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="px-5 hidden md:flex">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <a
+              class="btn hidden md:flex px-7 rounded-lg border-[#179800] text-xl"
+              >LogIn</a
+            >
+            <a
+              class="btn hidden md:flex px-7 rounded-lg text-xl bg-[#179800] text-white"
+              >Register</a
+            >
+          </div>
+        </div>
+      </nav>
+      <section class="container mx-auto text-center">
+        <div class="font-semibold text-[56px]">
+          Freshness You
+          <span class="text-[#179800]">
+            Can <br />
+            Count</span
+          >
+          On, Prices You’ll Love!
+        </div>
+        <p>
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+      </section>
+    </header>
+    <main class="h-6 bg-red-500"></main>
     <footer></footer>
   </body>
 </html>
