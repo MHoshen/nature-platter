@@ -1,0 +1,6 @@
+.offer-banner {
+  background-image: linear-gradient(to bottom right, #52db3a, transparent),
+    url("../assets/vegetable-offer.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 0px;
+}

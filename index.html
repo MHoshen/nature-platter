@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nuture's platter</title>
+    <link rel="stylesheet" href="styles/naturesplatter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,7 +39,8 @@
     </script>
   </head>
   <body class="font-Sora">
-    <header class="bg-gradient-to-t from-[#FFFFFF] to-[#EFEBE3]">
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+      <!-- #region nav -->
       <nav class="container mx-auto">
         <div class="navbar">
           <div class="navbar-start">
@@ -96,22 +98,332 @@
           </div>
         </div>
       </nav>
-      <section class="container mx-auto text-center">
-        <div class="font-semibold text-[56px]">
-          Freshness You
-          <span class="text-[#179800]">
-            Can <br />
-            Count</span
-          >
-          On, Prices You’ll Love!
+      <!-- #endregion nav -->
+
+      <!-- #region banner -->
+      <section class="container mx-auto flex justify-center md:mt-24">
+        <div class="w-11/12 md:w-2/3 text-center">
+          <h1 class="font-semibold text-3xl md:text-5xl">
+            Freshness You
+            <span class="text-[#179800]">
+              Can <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+          <p class="text-base md:text-xl">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
         </div>
-        <p>
-          Shop your daily essentials at unbeatable prices. From fresh produce to
-          pantry staples, we’ve got you covered every day!
-        </p>
       </section>
+      <!-- #endregion banner -->
+
+      <!-- #region hero -->
+      <section class="container mx-auto mt-4 md:mt-8">
+        <div class="flex justify-center items-center">
+          <img src="assets/hero-vegetables.png" alt="" />
+        </div>
+      </section>
+      <!-- #endregion hero -->
     </header>
-    <main class="h-6 bg-red-500"></main>
+    <main>
+      <!-- #region services -->
+      <section class="container mx-auto mt-12 md:mt-36 p-2">
+        <h1
+          class="text-2xl md:text-4xl mb-8 md:mb-12 font-semibold text-[#179800]"
+        >
+          Services
+        </h1>
+        <!-- #region service cards -->
+        <div class="flex flex-col md:flex-row gap-5 md:gap-6">
+          <!-- 24/7 Service card -->
+          <div
+            class="rounded-2xl bg-[#EFEBE3] p-8 flex flex-col items-center justify-center gap-4 text-center"
+          >
+            <div
+              class="rounded-full bg-white w-36 h-36 flex justify-center items-center"
+            >
+              <img src="assets/service.png" alt="" />
+            </div>
+            <h5 class="text-2xl font-semibold">24/7 Services</h5>
+            <p>
+              Fast, reliable, and fresh food delivery service, bringing
+              delicious meals to your doorstep.
+            </p>
+          </div>
+
+          <!-- Fast Delivery Card -->
+          <div
+            class="rounded-2xl bg-[#EFEBE3] p-8 flex flex-col items-center justify-center gap-4 text-center"
+          >
+            <div
+              class="rounded-full bg-white w-36 h-36 flex justify-center items-center"
+            >
+              <img src="assets/delivery.png" alt="" />
+            </div>
+            <h5 class="text-2xl font-semibold">Fast Delivery</h5>
+            <p>
+              Lightning-fast, reliable, and hassle-free delivery service,
+              bringing your orders on time.
+            </p>
+          </div>
+
+          <!-- Healthy Products Card -->
+          <div
+            class="rounded-2xl bg-[#EFEBE3] p-8 flex flex-col items-center justify-center gap-4 text-center"
+          >
+            <div
+              class="rounded-full bg-white w-36 h-36 flex justify-center items-center"
+            >
+              <img src="assets/healthy.png" alt="" />
+            </div>
+            <h5 class="text-2xl font-semibold">Healthy Products</h5>
+            <p>
+              Nutritious, organic, and high-quality healthy products for a
+              better and balanced lifestyle.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion service cards -->
+      </section>
+      <!-- #endregion services -->
+
+      <!-- #region popular products -->
+      <section class="bg-[#EFEBE3]">
+        <div class="container mx-auto mt-12 md:mt-36 p-2">
+          <h3 class="text-2xl md:text-4xl font-semibold p-12 md:p-36">
+            Popular Products
+          </h3>
+          <!-- popular product container -->
+          <div class="flex flex-col md:flex-row gap-6">
+            <!-- Off banner -->
+            <div class="basis-2/6 offer-banner p-10 rounded-xl">
+              <h4 class="text-3xl pl-5 mb-3 text-white">30% off</h4>
+              <p class="text-base mb-3">
+                Get 30% off on fresh, healthy products with fast and reliable
+                delivery service!
+              </p>
+              <button class="text-xl bg-white rounded-lg px-8 py-4">
+                Buy Now
+              </button>
+            </div>
+            <!-- Offers -->
+            <div
+              class="basis-4/6 grid grid-cols-2 md:grid-cols-3 md:gap-4 gap-2"
+            >
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 hidden md:p-4 md:flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+
+              <!-- offer's card 1 -->
+              <div
+                class="rounded-lg p-2 md:p-4 flex flex-row bg-white justify-start content-between items-center gap-4"
+              >
+                <!-- offer's card image -->
+                <img
+                  class="bg-[#EFEBE3] md:p-2 rounded-xl"
+                  src="assets/onion.png"
+                  alt=""
+                />
+                <!-- offer's description -->
+                <div>
+                  <i
+                    class="fa-solid fa-star text-xs md:text-base mr-1 text-[#FFC107]"
+                  ></i>
+                  <data class="text-xs md:text-base" value="4.5">4.5</data>
+                  <h5 class="text-sm md:text-lg font-medium">Onion 1 KG</h5>
+                  <data class="text-xs md:text-base font-medium" value="39.99"
+                    >$39.99</data
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion popular products -->
+    </main>
     <footer></footer>
   </body>
 </html>
