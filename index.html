@@ -135,6 +135,106 @@
       <!-- #endregion hero -->
     </header>
     <main>
+      <!-- #region offer of the day -->
+      <section
+        class="container mx-auto mt-12 md:mt-36 p-2 bg-gradient-to-br from-[#59db42] to-green-200 rounded-2xl"
+      >
+        <h1
+          class="text-2xl md:text-4xl mb-8 md:mb-12 font-semibold text-white mt-6"
+        >
+          Offer of the Day
+        </h1>
+        <div
+          class="grid grid-cols-2 md:grid-cols-6 gap-2 md:flex-row justify-center p-4"
+        >
+          <div
+            class="min-w-[150px] md:min-w-[200px] bg-white shadow-lg rounded-lg p-4 hover:bg-[#eeeae2]"
+          >
+            <img
+              src="assets/onion.png"
+              alt="Product 2"
+              class="w-full rounded-md"
+            />
+            <div class="mt-2 text-center">
+              <p class="text-gray-500 line-through">$60</p>
+              <p class="text-red-600 font-bold">$45</p>
+              <p class="text-green-600 font-bold">25% OFF</p>
+            </div>
+          </div>
+          <div
+            class="min-w-[150px] md:min-w-[200px] bg-white shadow-lg rounded-lg p-4 hover:bg-[#eeeae2]"
+          >
+            <img
+              src="assets/potato.png"
+              alt="Product 3"
+              class="w-full rounded-md"
+            />
+            <div class="mt-2 text-center">
+              <p class="text-gray-500 line-through">$70</p>
+              <p class="text-red-600 font-bold">$55</p>
+              <p class="text-green-600 font-bold">21.43% OFF</p>
+            </div>
+          </div>
+          <div
+            class="min-w-[150px] md:min-w-[200px] bg-white shadow-lg rounded-lg p-4 hover:bg-[#eeeae2]"
+          >
+            <img
+              src="assets/tomato.png"
+              alt="Product 4"
+              class="w-full rounded-md"
+            />
+            <div class="mt-2 text-center">
+              <p class="text-gray-500 line-through">$80</p>
+              <p class="text-red-600 font-bold">$60</p>
+              <p class="text-green-600 font-bold">25% OFF</p>
+            </div>
+          </div>
+          <div
+            class="min-w-[150px] md:min-w-[200px] bg-white shadow-lg rounded-lg p-4 hover:bg-[#eeeae2]"
+          >
+            <img
+              src="assets/tomato.png"
+              alt="Product 4"
+              class="w-full rounded-md"
+            />
+            <div class="mt-2 text-center">
+              <p class="text-gray-500 line-through">$80</p>
+              <p class="text-red-600 font-bold">$60</p>
+              <p class="text-green-600 font-bold">25% OFF</p>
+            </div>
+          </div>
+          <div
+            class="min-w-[150px] md:min-w-[200px] bg-white shadow-lg rounded-lg p-4 hover:bg-[#eeeae2]"
+          >
+            <img
+              src="assets/onion.png"
+              alt="Product 4"
+              class="w-full rounded-md"
+            />
+            <div class="mt-2 text-center">
+              <p class="text-gray-500 line-through">$80</p>
+              <p class="text-red-600 font-bold">$60</p>
+              <p class="text-green-600 font-bold">25% OFF</p>
+            </div>
+          </div>
+          <div
+            class="min-w-[150px] md:min-w-[200px] bg-white shadow-lg rounded-lg p-4 hover:bg-[#eeeae2]"
+          >
+            <img
+              src="assets/potato.png"
+              alt="Product 4"
+              class="w-full rounded-md"
+            />
+            <div class="mt-2 text-center">
+              <p class="text-gray-500 line-through">$80</p>
+              <p class="text-red-600 font-bold">$60</p>
+              <p class="text-green-600 font-bold">25% OFF</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #endregion offer of the day -->
+
       <!-- #region services -->
       <section class="container mx-auto mt-12 md:mt-36 p-2">
         <h1
@@ -485,48 +585,56 @@
       <!-- #endregion arrival & offers -->
     </main>
 
-    <footer class="bg-[#179700] md:h-[658px] relative mt-[225px]">
-      <div class="container mx-auto">
+    <footer class="bg-[#179700] md:h-[758px] relative mt-[225px]">
+      <div class="container mx-auto mx p-2">
         <div
-          class="flex flex-col rounded-3xl bg-[#eeeae2] py-12 px-28 gap-20 absolute -top-56 w-[62%]"
+          class="flex flex-col md:flex-row items-center rounded-3xl bg-[#eeeae2] py-8 md:py-12 px-3 md:px-28 gap-20 absolute -top-56 w-[95%] md:w-[62%]"
         >
-          <img src="assets/vegetable-busket.png" alt="" />
+          <img
+            class="max-sm:w-[232px] max-sm:h-[182px]"
+            src="assets/vegetable-busket.png"
+            alt=""
+          />
           <div class="flex flex-col gap-8">
-            <h1 class="text-4xl font-semibold">Get Grocery News!</h1>
-            <p class="text-xl">
+            <h1 class="md:text-4xl text-xl font-semibold">Get Grocery News!</h1>
+            <p class="text-base md:text-xl">
               Exclusive training tips, ticks, product deals and more.
             </p>
             <input
-              class="rounded-lg p-4 block"
+              class="rounded-md md:rounded-lg p-2 md:p-4 block"
               placeholder="Enter email"
               type="text"
               name=""
               id=""
             />
             <div>
-              <button class="px-8 py-3 text-xl bg-[#179700] rounded-lg">
+              <button
+                class="px-6 md:px-8 py-2 md:py-3 text-sm md:text-xl bg-[#179700] rounded-md md:rounded-lg"
+              >
                 Subscribe
               </button>
             </div>
           </div>
         </div>
 
-        <div class="flex justify-between pb-36 pt-[370px]">
+        <div
+          class="flex flex-col md:flex-row justify-between pb-12 md:pb-36 pt-[370px]"
+        >
           <div class="text-start">
             <img src="assets/logo-footer.png" alt="" />
-            <p class="text-xl text-white mt-4">
+            <p class="text-base md:text-xl text-white mt-3 md:mt-4">
               Discover a world of treats, toys, and essentials handpicked for
               your furry friends
             </p>
           </div>
-          <ul class="list-none text-xl text-white">
-            <li class="p-6">Product</li>
-            <li class="p-6">Service</li>
-            <li class="p-6">Contact Up</li>
+          <ul class="list-none text-base md:text-xl text-white">
+            <li class="p-4 md:p-6">Product</li>
+            <li class="p-4 md:p-6">Service</li>
+            <li class="p-4 md:p-6">Contact Up</li>
           </ul>
           <div class="flex flex-col justify-end">
-            <h5 class="text-white text-xl p-4">Follow Us</h5>
-            <div class="flex flex-row gap-7 items-end">
+            <h5 class="text-white text-sm md:text-xl p-4">Follow Us</h5>
+            <div class="flex flex-row gap-2 md:gap-7 items-end">
               <img class="rounded-full" src="assets/fb.png" alt="facebook" />
               <img
                 class="rounded-full"
